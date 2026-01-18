@@ -1,0 +1,117 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Shared Styles--------------------------------------------------------------- */
+.display-flex {
+  display: flex;
+}
+
+.techwave-logo {
+    color: white;
+}
+
+.gradient-text {
+  /* Default gradient */
+  background: linear-gradient(60deg, #F7E93F 0%, #FB0984 50%, #9100F8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.btn-primary {
+  background: linear-gradient(45deg, #F7E93F, #FB0984, #9100F8);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 80000px;
+  padding: 12.5px 16px;
+}
+
+
+
+/* Header Section Styles------------------------------------------------------ */
+
+nav {
+    background-color: #1A0B2E;
+    border-bottom: 1px solid #333;
+    
+}
+
+
+.nav-container {
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    
+    
+}
+
+.nav-links {
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links li {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
+
+
+/* Hero Section Styles-------------------------------------------------------- */
+.hero-section {
+    background-image: url('../assets/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-bottom {
+    text-align: center;
+    
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px;
+}
+
+.img-bottom {
+    margin: 0 auto;
+}
+
+.img-top {
+    position: absolute;
+    margin: 0 auto;
+}
+
+.hero-bottom h3 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    color: white;
+    /* margin-bottom: 1rem; */
+    margin-bottom: 10px;
+}
+
+.hero-bottom p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+}
