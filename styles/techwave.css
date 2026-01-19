@@ -31,7 +31,7 @@ html, body {
 }
 
 .para-font {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 1rem;
   font-weight: 400;
 }
@@ -247,6 +247,7 @@ nav {
 
 .choose-cards-container p {
     color: rgba(255, 255, 255, 0.6);
+    padding-left: 0;
 }
 .choose-cards-container h2 {
     color: white;
@@ -276,7 +277,7 @@ nav {
 
 .episode-card-container {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
     
@@ -353,6 +354,8 @@ nav {
 
 .meet-the-host-container {
     background-color: #1A0B2E;
+    padding-bottom: 120px;
+    
 }
 
 .meet-the-host-container h2 {
@@ -367,11 +370,12 @@ nav {
 
 .host-card {
     gap: 50px;
-    max-width: 1200px;
-    margin: 0 auto;
     background-color: rgba(53, 17, 101, 0.4);
     padding: 40px;
+    /* padding-bottom: 1px; */
     border-radius: 40px;
+    max-width: 1160px;
+    margin: 0 auto;
 }
 .host-card h3 {
     color: white;
@@ -400,4 +404,104 @@ nav {
     width: 16px;
     height: 16px;
     padding: 7px;
+}
+ 
+
+/* Footer Section Styles---------------------------------------------------------  */
+
+.footer-container {
+    background-image: url('../assets/footer-bg.png');
+    background-position: center;
+    margin: 0 auto;
+    height: 412px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.footer-container h2 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.wave-span {
+    background: linear-gradient(60deg, #F7E93F 0%, #FB0984 50%, #9100F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.footer-links {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    max-width: 660px;
+}
+
+@media screen and (max-width: 576px) {
+
+
+    .numbers-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    margin-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+    .choose-cards-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5";
+}
+
+    .episode-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+    .host-card {
+    flex-direction: column;
+    gap: 50px;
+    background-color: rgba(53, 17, 101, 0.4);
+    /* padding: 40px; */
+    /* padding-bottom: 1px; */
+    border-radius: 40px;
+    max-width: 1160px;
+    margin: 0 auto;
+    justify-content: center;
+    width: 75%;
+}
+
+    .host-info {
+        text-align: center;
+    }
+
+    .host-card img {
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 20px; */
+    }
 }
