@@ -262,6 +262,7 @@ nav {
 .featured-episodes-container {
     background-color: #1A0B2E;
     padding: 100px 0;
+    padding-bottom: 150px;
 }
 
 
@@ -304,7 +305,7 @@ nav {
   font-size: 40px;
   color: white;
   background: linear-gradient(45deg, #F7E93F, #FB0984, #9100F8);
-  padding: 4px 16px;
+  padding: 5px 16px;
   border-radius: 50%;
 }
 
@@ -333,7 +334,12 @@ nav {
     color: #00FF88;
     font-size: 1rem;
     font-weight: 500;
-    margin-top: -2px;
+    margin-top: -5px;
+    
+}
+
+.yt-bottom p {
+    margin-top: -10px;
     
 }
 
@@ -342,3 +348,56 @@ nav {
 }
 
 
+/* Meet The Host section styles---------------------------------------------------------  */
+
+
+.meet-the-host-container {
+    background-color: #1A0B2E;
+}
+
+.meet-the-host-container h2 {
+    color: white;
+    font-size: 3rem;    
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 30px;
+
+}
+
+.host-card {
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    border-radius: 40px;
+}
+.host-card h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.host-card p {
+    padding-left: 0;
+}
+
+
+.logo-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+
+
+}
+
+.logo-container img {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    padding: 7px;
+}
