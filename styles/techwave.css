@@ -486,7 +486,6 @@ nav img {
         padding-left: 20px;
     }
 
-
     .numbers-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -514,7 +513,7 @@ nav img {
     .episode-card-container {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 76%;
     margin: 0 auto;
     /* gap: 50px; */
     
@@ -536,14 +535,6 @@ nav img {
         text-align: center;
     }
 
-    .host-card img {
-        align-items: center;
-        margin: 0 auto;
-        padding: 0;
-    }
-
-
-
     .footer-links {
         grid-template-columns: repeat(2, 1fr);
         max-width: 350px; 
@@ -555,5 +546,13 @@ nav img {
       height: auto;
     }
 
+
+    .about-podcast-content p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    margin: 0 auto;
+    width: 75%;
+}
     
 }
