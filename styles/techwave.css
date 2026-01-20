@@ -19,6 +19,15 @@ html, body {
   display: flex;
 }
 
+.hide {
+    display: none;
+}
+
+/* .mobile-only {
+  display: block;
+} */
+
+
 .techwave-logo {
     color: white;
 }
@@ -441,12 +450,34 @@ nav {
     max-width: 660px;
 }
 
+nav img {
+        display: none;
+        padding-right: 20px;
+    }
+
 @media screen and (max-width: 576px) {
+
+    nav button {
+        display: none;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    nav img {
+        display: block;
+        padding-right: 20px;
+    }
+
+    nav h1 {
+        padding-left: 20px;
+    }
 
 
     .numbers-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     margin-top: 80px;
     max-width: 1200px;
@@ -502,6 +533,7 @@ nav {
 
     .footer-links {
         grid-template-columns: repeat(2, 1fr);
-        /* gap: 20px; */
+        max-width: 350px; 
+        gap: 0px;
     }
 }
